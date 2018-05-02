@@ -19,9 +19,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_plotBtn_clicked()
 {
-    plot(ui->funcSelector->itemText(ui->funcSelector->currentIndex()).toStdString(),
+    /*plot(ui->funcSelector->itemText(ui->funcSelector->currentIndex()).toStdString(),
          ui->xmin->value(),
-         ui->xmax->value());
+         ui->xmax->value());*/
+    ui->lineEdit->setText(QString::fromStdString(std::to_string(ui->xmin->value()) +
+                                                 " - " +
+                                                 std::to_string(ui->xmax->value())));
 }
 
 void MainWindow::on_xmin_valueChanged(int value)

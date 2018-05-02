@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Plotter</string>
   </property>
   <property name="locale">
    <locale language="English" country="UnitedStates"/>
@@ -22,13 +22,13 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>69</width>
+      <width>101</width>
       <height>22</height>
      </rect>
     </property>
     <item>
      <property name="text">
-      <string/>
+      <string>Choose function</string>
      </property>
     </item>
     <item>
@@ -157,16 +157,6 @@
      <string>Set interval:</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>400</width>
-     <height>21</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
