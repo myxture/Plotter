@@ -8,6 +8,8 @@
 
 using namespace  std;
 
+/*Roland voltam és ide írok magamnak egy kis noteot: x legyártás, 1000 beosztással, 2 param kezdő vég, function.h nev tipusok*/
+
 //Declaration of functions
 vector<double> sin_func(vector<double> x);
 vector<double> cos_func(vector<double> x);
