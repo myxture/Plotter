@@ -9,7 +9,9 @@
 using namespace  std;
 
 //Declaration of functions
-vector<double> sin_func(vector<double> x, int n);
+vector<double> sin_func(vector<double> x);
+vector<double> cos_func(vector<double> x);
+vector<double> tg_func(vector<double> x);
 
 
 //Main
@@ -27,10 +29,37 @@ int main()
 //Definition of functions
 vector<double> sin_func(vector<double> x, int n)
 {
-    vector<double> y(n);
-    
+    vector<double> y(x.size());
+    for(int i=0; i<x.size(); ++i)
+    {
+        y[i] = sin( x[i] * M_PI / 180);
+    }
     return y;
 }
+
+vector<double> cos_func(vector<double> x, int n)
+{
+    vector<double> y(x.size());
+    for(int i=0; i<x.size(); ++i)
+    {
+        y[i] = cos( x[i] * M_PI / 180);
+    }
+    return y;
+}
+
+vector<double> tg_func(vector<double> x)
+{
+    vector<double> y(x.size());
+    for(int i=0; i<x.size(); ++i)
+    {
+        y[i] = tan( x[i] * M_PI / 180);
+    }
+    return y;
+}
+
+
+
+
 
 
 
