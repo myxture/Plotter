@@ -9,6 +9,8 @@
 using namespace  std;
 #define domain 1000
 
+/*Roland voltam és ide írok magamnak egy kis noteot: x legyártás, 1000 beosztással, 2 param kezdő vég, function.h nev tipusok*/
+
 //Declaration of functions
 vector<double> x(double starting_point, double ending_point); //domain
 vector<double> sin_func(vector<double> x); //sin
