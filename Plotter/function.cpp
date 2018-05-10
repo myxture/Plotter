@@ -1,4 +1,6 @@
 //C++ includes
+#define _USE_MATH_DEFINES
+
 #include <utility>
 #include <iostream>
 #include <vector>
@@ -6,9 +8,10 @@
 #include <fstream>
 #include <string>
 
-using namespace  std;
+using namespace std;
 #define domain 1000
 
+<<<<<<< HEAD
 
 
 //Declaration of functions
@@ -42,11 +45,13 @@ int main()
 }
 
 
+=======
+>>>>>>> 816731bdc3e173dc06c38dfdcf8ecd357eee9849
 //Definition of functions
-vector<double> x(double starting_point, double ending_point)
+vector<double> xs(double starting_point, double ending_point)
 {
     vector<double> x(domain);
-    double step = ((ending_point - starting_point) / domain;)
+    double step = ((ending_point - starting_point) / domain);
     for(int i=0; i<domain; ++i)
     {
         x[i] = step*(i+1);
@@ -54,6 +59,7 @@ vector<double> x(double starting_point, double ending_point)
     
     return x;
 }
+<<<<<<< HEAD
 
 vector<double> div_func(vector<double> x)
 {
@@ -97,19 +103,22 @@ vector<double> div_x(vector<double> x)
 
 
 vector<double> sin_func(vector<double> x, int n)
+=======
+vector<double> sin_func(vector<double> x)
+>>>>>>> 816731bdc3e173dc06c38dfdcf8ecd357eee9849
 {
     vector<double> y(x.size());
-    for(int i=0; i<x.size(); ++i)
+    for(int i=0; i<x.size(); ++i)
     {
         y[i] = sin( x[i] * M_PI / 180);
     }
     return y;
 }
 
-vector<double> cos_func(vector<double> x, int n)
+vector<double> cos_func(vector<double> x)
 {
     vector<double> y(x.size());
-    for(int i=0; i<x.size(); ++i)
+    for(int i=0; i<x.size(); ++i)
     {
         y[i] = cos( x[i] * M_PI / 180);
     }
@@ -119,27 +128,27 @@ vector<double> cos_func(vector<double> x, int n)
 vector<double> tg_func(vector<double> x)
 {
     vector<double> y(x.size());
-    for(int i=0; i<x.size(); ++i)
+    for(int i=0; i<x.size(); ++i)
     {
         y[i] = tan( x[i] * M_PI / 180);
     }
     return y;
 }
 
-vector<double> sinh_func(vector<double> x, int n)
+vector<double> sinh_func(vector<double> x)
 {
     vector<double> y(x.size());
-    for(int i=0; i<x.size(); ++i)
+    for(int i=0; i<x.size(); ++i)
     {
         y[i] = sinh( x[i] * M_PI / 180);
     }
     return y;
 }
 
-vector<double> cosh_func(vector<double> x, int n)
+vector<double> cosh_func(vector<double> x)
 {
     vector<double> y(x.size());
-    for(int i=0; i<x.size(); ++i)
+    for(int i=0; i<x.size(); ++i)
     {
         y[i] = cosh( x[i] * M_PI / 180);
     }
@@ -149,27 +158,31 @@ vector<double> cosh_func(vector<double> x, int n)
 vector<double> tgh_func(vector<double> x)
 {
     vector<double> y(x.size());
-    for(int i=0; i<x.size(); ++i)
+    for(int i=0; i<x.size(); ++i)
     {
         y[i] = tanh( x[i] * M_PI / 180);
     }
     return y;
 }
 
-vector<double> exp_func(vector<double x)
+vector<double> exp_func(vector<double> x)
 {
     vector<double> y(x.size());
-    for(int i=0; i<x.size(); ++i)
+    for(int i=0; i<x.size(); ++i)
     {
         y[i] = exp( x[i] );
     }
     return y;
 }
 
+<<<<<<< HEAD
 vector<double> ln_func(vector<double x)
+=======
+vector<double> ln_func(vector<double> x)
+>>>>>>> 816731bdc3e173dc06c38dfdcf8ecd357eee9849
 {
     vector<double> y(x.size());
-    for(int i=0; i<x.size(); ++i)
+    for(int i=0; i<x.size(); ++i)
     {
         y[i] = log( x[i] );
     }
