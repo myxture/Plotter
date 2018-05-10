@@ -19,17 +19,23 @@ vector<double> tg_func(vector<double> x); //tg
 vector<double> sinh_func(vector<double> x); //sin hyperbolic
 vector<double> cosh_func(vector<double> x); //cos hyperbolic
 vector<double> tgh_func(vector<double> x); //tg hyperbolic
-vector<double> exp_func(vector<double x); //exponential
-vector<double> ln_func(vector<double x); //natural logarithm
+vector<double> exp_func(vector<double> x); //exponential
+vector<double> ln_func(vector<double> x); //natural logarithm
+vector<double> div_func(vector<double> x); //    1/x
+vector<double> square_func(vector<double> x);  // x^2
+vector<double> square_root(vector<double> x); // sqrt(x)
+
+
+
 
 
 
 //Main
 int main()
 {
-    
-    
-    
+    vector<double> x(3);
+    x = {1,2,3};
+    cout << "x" << x(x) << "sin" << sin_func(x);
     
     
     return 0;
@@ -48,6 +54,48 @@ vector<double> x(double starting_point, double ending_point)
     
     return x;
 }
+
+vector<double> div_func(vector<double> x)
+{
+    vector<double> y(x.size());
+    for(int i = 0; i < x.size(); i++)
+    {
+        y[i] = 1/x[i];
+    }
+    return y;
+}
+
+vector<double> square_func(vector<double> x)
+{
+    vector<double> y(x.size());
+    for(int i = 0; i < x.size(); i++)
+    {
+        y[i] = x[i]*x[i];
+    }
+    return y;
+}
+
+vector<double> square_root(vector<double> x)
+{
+    vector<double> y(x.size());
+    for(int i = 0; i < x.size(); i++)
+    {
+        y[i] = sqrt(x[i]);
+    }
+    return y;
+}
+
+vector<double> div_x(vector<double> x)
+{
+    vector<double> y(x.size());
+    for(int i = 0; i < x.size(); i++)
+    {
+        y[i] = 1/x[i];
+    }
+    return y;
+}
+
+
 vector<double> sin_func(vector<double> x, int n)
 {
     vector<double> y(x.size());
@@ -118,7 +166,7 @@ vector<double> exp_func(vector<double x)
     return y;
 }
 
-vector<double> ln_func(vector<double x);
+vector<double> ln_func(vector<double x)
 {
     vector<double> y(x.size());
     for(int i=0; i<x.size(); ++i)
