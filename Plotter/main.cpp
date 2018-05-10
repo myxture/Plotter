@@ -1,3 +1,4 @@
+#include "qcustomplot.h"
 #include "mainwindow.h"
 #include <QApplication>
 
