@@ -18,11 +18,15 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_plotBtn_clicked();
+    void on_xmin_slider_valueChanged(int value);
 
-    void on_xmin_valueChanged(int value);
+    void on_xmax_slider_valueChanged(int value);
 
-    void on_xmax_valueChanged(int value);
+    void on_funcSelector_activated(const QString &arg1);
+
+    void on_xmin_edit_valueChanged(double arg1);
+
+    void on_xmax_edit_valueChanged(double arg1);
 
 private:
     Ui::MainWindow *ui;

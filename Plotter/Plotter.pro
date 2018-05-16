@@ -29,7 +29,6 @@ SOURCES += \
         mainwindow.cpp \
         function.cpp
 
-
 HEADERS += \
         qcustomplot.h \
         mainwindow.h \
