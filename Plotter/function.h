@@ -4,6 +4,9 @@
 #define FUNCTION_H
 
 std::vector<double> xs(double, double); //domain
+std::vector<double> div_func(std::vector<double>); //    1/x
+std::vector<double> square_func(std::vector<double>);  // x^2
+std::vector<double> square_root(std::vector<double>); // sqrt(x)
 std::vector<double> sin_func(std::vector<double>); //sin
 std::vector<double> cos_func(std::vector<double>); //cos
 std::vector<double> tg_func(std::vector<double>); //tg
